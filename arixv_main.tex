@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+
+% Recommended, but optional, packages for figures and better typesetting:
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{booktabs} % for professional tables
+
+%\usepackage[utf8]{inputenc} % allow utf-8 input
+%\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+%\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{graphicx}
+
+\usepackage{fullpage}
+%\usepackage{authblk}
+\usepackage[round]{natbib} 
+
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,round,citesep={;},aysep={,},yysep={;}}
+
+\usepackage{color}
+\usepackage{hyperref}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{lipsum}  
+\makeatletter
+\newcommand{\printfnsymbol}[1]{%
+  \textsuperscript{\@fnsymbol{#1}}%
+}
+\makeatother
+
+% Attempt to make hyperref and algorithmic work together better:
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+
+\usepackage{qiangstyle}
+
+
+\title{\huge Firefly Neural Architecture Descent}
+\author{%
+	Author One\thanks{The first two authors contributed equally to this work.}\\
+    ~University of Texas at Austin\\
+	\texttt{xx@cs.utexas.edu}
+	\and
+	Author Two\printfnsymbol{1}\\
+	~University of Texas at Austin\\
+	\texttt{xx@cs.utexas.edu} \\
+	\and 
+	Author Three\\
+	University of Texas at Austin\\
+	\texttt{xx@cs.utexas.edu} \\
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+
+
+\begin{abstract}
+  \emph{Firefly Splitting} 
+\end{abstract}
+
+%%%%%%%%%%%%%%%
+% The followings are the main context
+%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+This is the introduction \citep{sutton98beinforcement}.
+
+
+
+
+\clearpage
+\bibliography{reference}
+%\bibliographystyle{iclr2020_conference}
+
+
+\clearpage
+
+\onecolumn
+\appendix
+\begin{center}
+\Large
+\textbf{Appendix}
+\end{center}
+
+
+%%%%%%%%%%%%%%%
+% The followings are Appendix
+%%%%%%%%%%%%%%%
+
+%\input{tex/proof_appendix.tex}
+
+\end{document}
